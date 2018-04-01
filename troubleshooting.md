@@ -1,0 +1,25 @@
+# Troubleshooting
+
+- Has the student created a CoCalc account?
+  - If not, they can go directly to cocalc.com and create one. The email invitation is not necessary.
+  - Students are strongly encouraged to use their UCSD email address on CoCalc. This makes it easier to avoid ambiguity: CoCalc's namespace is global, and it is entirely possible for multiple users to have the same first and last name.
+- Does the student have a course project?
+  - Go to the course file in the master project, click the "Students" tab, and make sure that the student is listed. If not, use the text box at top right to add them.
+  - If they are already listed but can't see their course project, open that project and (from its "Settings" tab) add the student as a collaborator. 
+  - Make sure that the student's course project has the correct upgrades: member hosting and Internet access should both be enabled. If not, ask me to fix this.
+  - Note that adding a student to the course does not automatically give them all previous handouts. You may need to push those out manually.
+- Does the student have the shared project?
+  - Open the shared project and (from its "Settings" tab) add the student as a collaborator.
+- Is the student missing a specific lecture or assignment?
+  - You can push it out to them individually from within the course file. If you don't see the student there, add them to the course.
+  - Beware that pushing a handout to all students often does not completely succeed the first time around. Check the outcome after CoCalc claims to have completed the operation!
+- Is a student's project behaving erratically?
+  - In a notebook, try restarting the kernel. (Keep an eye on memory usage!)
+  - Try closing and reopening the file in question.
+  - Try restarting a student's project (under Settings).
+  - Make sure that the project settings show the correct upgrades: member hosting and Internet access should both be enabled. If not, ask me to fix this.
+- Does a student's project fail to open or restart?
+  - One possibility is a disk overrun. Ask me to fix this by allocating more disk space.
+- Is a shared chat room behaving erratically?
+  - Try archiving the chat and creating a new room.
+- If all else fails, open a support ticket from within a project (click "Help") to contact the CoCalc staff.
