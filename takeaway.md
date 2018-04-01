@@ -1,0 +1,57 @@
+Good ideas:
+- For redundancy, always bring two laptops to class. And their charger(s). (Side benefit: this means one can catch up on email or work during that awkward few minutes before class starts!)
+- The text on the projector can *always* be larger. Also, use global account settings to choose a sensible color scheme for the editor (e.g., Monokai).
+- Before pushing any handout or assignment, use the "edit handout" button and:
+  - remove all cell output;
+  - remove any extra files (or better yet, don't create them there in the first place; sometimes CoCalc will undelete them without warning);
+  - make sure the kernel is set correctly (to the first one to be used);
+  - for assignments, check that the due date is correctly set (this creates an extra file in the project).
+- Regarding assignments:
+  - Write the problem sets first, then construct lectures around them.
+  - Since the later problem sets are naturally harder, maybe for balance they should also be shorter.
+  - Students appreciate having the next homework available as soon as the previous one is collected.
+  - If each unit will be running MWF, have the corresponding problem set due the following Monday or Tuesday. And try to schedule sections and office hours with this in mind.
+- Clarify at the outset what communication is and is not allowed by email. In particular, routine questions about upcoming homework should generally be restricted to office hours or virtual office hours. (However, questions about technical issues with the homework are fair game, although don't promise individual answers.)
+- Consider, in addition to pushing out the lectures, pushing out a second copy of each notebook with the annotations made during class.
+- To cut down on lag in the chat room, one should periodically archive the chat room and create a new one. We might also want to try using Piazza instead of, or in addition to, the group chat room.
+
+What to explain to TAs at the first meeting:
+- Demonstrate features of the course project.
+- Indicate the location of the chat room.
+- Create the duty roster ahead of time (with virtual office hours and solution keys) and explain its use at the TA meeting.
+
+Possible changes for next time:
+- At the moment, most students come having seen C and/or Java in one of the basic CSE courses. 
+  - So maybe we can just formalize this; make them required and build the course around that.
+  - Or, make the new DSC10 a formal prerequisite, and shorten the Python unit.
+  - Hybrid: require one of CSE5A (C), CSE7 (Matlab), CSE8A (Java), or DSC10 (Python). Corequisite should be fine too.
+- More structured version of the week 1 survey. (Use Google Docs to get a spreadsheet.)
+  - For programming languages (C/C++, Java, Matlab, Python): ask to choose between
+    - never used before
+    - seen it used in a class that was primarily about something else (e.g., Matlab in Math 18)
+    - had a class primarily based on this
+    - familiar with it beyond the level of a class.
+- Consider dropping the 20D prerequisite. It was mostly there as a holdover from 152, and also to keep the enrollment under control; but I waived it several times anyway.
+  - Alternative: make use of it by adapting the 20D MATLAB material.
+- Deploy an instrument to assess learning gains (e.g., SALG). This will require defining more clearly the educational goals of the course.
+  - Expose students to some of the conceptual difficulties in translating abstract mathematics into concrete computation.
+  - Teach students not just about individual software systems, but also the meta-skill of mastering a new software system from scratch.
+  - Provide a pedagogical laboratory for the math department, in which technological innovations can be tested on a small scale before being considered for wider deployment.
+- Make a formal list of conceptual topics to be treated.
+  - Recursive versus nonrecursive functions
+  - Numerical (in)stability in linear algebra
+  - Modular exponentiation using repeated squaring
+  - Intermediate complexity implosion in linear algebra over Q
+- Formalize the meta structure of a typical problem set.
+  - First 2 problems are simply testing recall of lecture.
+  - Next 2 problems are further exploration of the software.
+  - Last 2 problems are exploration of conceptual issues.
+  - For later in the course, when the problems get harder, maybe give only 5 problems instead of 6.
+- See about getting CoCalc to provide some tools for interactivity in lecture (a la iClicker).
+- Introduce pandas in the Python unit, since it is pretty easy and can then be used later for examples and exercises. (Possible downside: its syntax is not consistent with the rest of Python.)
+- Fill in more details in the graph theory unit, perhaps expanding it to 3 lectures.
+- Find a way for the course grader not to appear as a collaborator on student projects (reported to CoCalc).
+- Additional technologies to look into (may not yet be supported by CoCalc):
+  - RISE
+  - nbgrader
+  - tutormagic
