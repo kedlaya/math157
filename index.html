@@ -1,0 +1,250 @@
+<html>
+<title>Math 157 - Intro to Mathematical Software (Winter 2018)</title>
+
+<body>
+<h1> Math 157 - Intro to Mathematical Software </h1>
+
+<p>
+Information appearing below is subject to revision until the first lecture. Some additional
+information, particularly on the use of CoCalc, will be given in the <a href="https://cocalc.com/projects/875d9a0b-f79b-46a1-b048-cfe18fdf2ab9/files/lectures/2018-01-08/2018-01-08.ipynb">first lecture</a>;
+CoCalc also provides a <a href="https://tutorial.cocalc.com/students/">tutorial for students</a>.
+</p>
+
+<p>
+See <a href="https://cocalc.com/share/875d9a0b-f79b-46a1-b048-cfe18fdf2ab9/announcements.md?viewer=share">this page</a> for announcements.
+</p>
+
+<p>
+<b>Course description:</b>
+Math 157 is an introduction to the use of mathematical software. Although mathematics
+is still largely taught as a pencil-and-paper (and chalk) subject, this approach ignores the fundamental role 
+played by computing technology in the process of mathematical reasoning and discovery. This course will introduce students to a broad but coherent collection of open-source software tools, and to diverse examples of their use in mathematical study and research. 
+The course will be taught in a hands-on fashion;
+lectures will consist of interactive demonstrations, while assignments will involve guided experimentation and discovery.
+We will make extensive use of the <a href="http://www.python.org/">Python</a> programming language,
+the <a href="http://jupyter.org/">Jupyter</a> notebook system,
+and the <a href="http://www.sagemath.org/">SageMath</a> computer algebra system; however,
+no prior exposure to these tools, other mathematical software (Mathematica, Maple, Matlab, etc.), or computer programming will be assumed.
+</p>
+
+<p>
+This course is based on the cloud computing platform <a href="https://www.cocalc.com/">CoCalc</a> (formerly SageMathCloud).
+As one component of the course grade is in-class participation, students are required 
+to bring a laptop or large tablet to lectures; however, the only local software installation required is a web browser. More details on how CoCalc is to be used will be given in the <a href="https://cocalc.com/projects/875d9a0b-f79b-46a1-b048-cfe18fdf2ab9/files/lectures/2018-01-10/2018-01-10.ipynb">first lecture</a>.
+</p>
+
+<p>
+Officially, this course is being offered for the first time. However, a pilot version of the course was offered during winter 2017 as Math 152: Applicable Math and Computing (based on a course taught by William Stein at University of Washington). 
+Here are the
+<a href="https://cocalc.com/projects/8a2a5bba-2f6d-43ba-8570-fa9e4672e2b1/files/syllabus.html">syllabus from that course</a>, the <a href="https://cocalc.com/projects/8a2a5bba-2f6d-43ba-8570-fa9e4672e2b1/files/lectures/">lecture materials</a>, and the 
+<a href="https://cape.ucsd.edu/responses/CAPEReport.aspx?sectionid=893244">CAPE report</a>.
+(If you took my Math 152 course, please do not not register for Math 157!)
+</p>
+
+<p>
+Although Math 157 has been permanently added to the course catalog, it remains 
+highly experimental in both its use of
+new technology and the approach to pedagogy. In addition to the final course evaluations, there will be several opportunities to submit feedback during the course; this feedback will help me evaluate some of the experiments and plan modifications for future iterations of the course.
+</p>
+
+<p>
+Since Math 157 is new, it may not yet appear in the list of approved courses for certain majors.
+I have confirmed that Math 157 is now an <a href="https://www.math.ucsd.edu/~handbook/undergraduate/ma30-math-computer-science-b-s/">approved List B/C elective</a> for Mathematics-Computer Science (MA30) majors
+and an <a href="https://www.math.ucsd.edu/~handbook/undergraduate/ma35-probability-statistics-b-s/">approved upper-division elective</a> for Probability and Statistics (MA35) majors.
+If you are interested in the course but are unsure whether it will count for your major, please contact me for guidance.
+</p>
+
+<p>
+<b>Instructor:</b> <a href="http://kskedlaya.org/">Kiran Kedlaya</a>,
+kedlaya [at] ucsd [etcetera].
+</p>
+
+<p>
+<b>TAs:</b> 
+<ul>
+<li>Thomas Grubb, tgrubb [at] ucsd [etcetera]. </li>
+<li>Jun Bo Lau, jblau [at] ucsd [etcetera]. </li>
+<li>Peter Wear, pwear [at] ucsd [etcetera]. </li>
+</ul>
+</p>
+
+<p>
+<b>Lectures:</b> MWF 2:00-2:50pm in HSS 1330. No lectures on Monday, January 15 or Monday, February 19 (university holidays). There is a class participation component that contributes to the course grade; see below.
+</p>
+
+<p>
+<b>Discussion sections:</b> Tuesday 6:00-6:50pm (Wear), 7:00-7:50pm (Wear), 8:00-8:50pm (Grubb), 9:00-9:50pm (Lau) in APM 6402.
+Beware that the exterior doors to APM are locked each weekday after 9:20pm.
+</p>
+
+<p>
+<b>Office hours:</b> 
+<ul>
+<li> Kedlaya: Thursday 4-5pm, APM 7202. 
+</li>
+<li> Grubb: Tuesday 11am-12pm, APM 6446.
+</li>
+<li> Lau: Thursday 11am-12pm, APM 6446.
+</li>
+<li> Wear: Wednesday 3-5pm, APM 6132.
+</li>
+</ul>
+In addition, we will be conducting "virtual office hours" Friday 3-7pm: during this time, the course staff will be monitoring the course chatroom on CoCalc to answer any questions that may arise.
+</p>
+
+<p>
+<b>Textbook:</b> 
+None. In lieu of purchasing a textbook, students will need to create a free account on <a href="https://cocalc.com/">CoCalc</a> in order to complete and submit assignments.
+(It is not necessary to pay for an upgraded account; equivalent functionality will be provided to enrolled students.)
+If you do not use your official UCSD email address to create the account, please provide the instructor with the address you used in order to gain access to the course materials.
+</p>
+
+<p>
+<b>Prerequisites:</b> 
+
+Math 20D, plus any one of Math 18 or Math 20F or Math 31AH. As usual, these can be waived by the instructor, but I will be pretty strict because I have already made a substantial effort to keep the prerequisites low to begin with.
+</p>
+
+<p>
+<b>Homework:</b> Weekly problem sets, due Fridays at 8pm (one each during weeks 2-9). 
+All assignments will be assigned, completed, submitted, evaluated, and returned using CoCalc; the process will be explained in the
+<a href="https://cocalc.com/projects/875d9a0b-f79b-46a1-b048-cfe18fdf2ab9/files/lectures/2018-01-10/2018-01-10.ipynb">first lecture</a>. For security reasons, grades will not be posted within CoCalc; check <a href="https://tritoned.ucsd.edu">TritonEd</a> for those.
+</p>
+
+<p>
+<b>Midterms:</b> None.
+</p>
+    
+<p>
+<b>Final exam:</b> None. Instead, there will be a final project due on the last day of classes (Friday, March 16). This will include an in-class component on March 12 and March 14.
+</p>
+
+<p>
+<b>Grading:</b> 
+    <ul>
+        <li>60% homework (best 6 assignments, weighted equally).</li>
+        <li>20% final project.</li>
+        <li>20% in-class participation (up to 20 of 24 lectures counted). Participation is evaluated based on changes in the lectures/[date] directory during the class hour (as timestamped by CoCalc).
+No evaluations for the first lecture (1/8) or during week 10 (March 12-16).
+</li>
+    </ul>
+        Since these parameters have been chosen to be somewhat forgiving, no additional excuses will be granted (not even for waitlisted students). No exceptions.
+</p>
+
+<p>
+For the conversion of raw scores into letter grades, the following minima are guaranteed:
+<table border="1">
+<tr>
+<td> Percentage </td>
+<td> 97 </td>
+<td> 93 </td>
+<td> 90 </td>
+<td> 87 </td>
+<td> 83 </td>
+<td> 80 </td>
+<td> 77 </td>
+<td> 73 </td>
+<td> 70 </td>
+</tr>
+<tr>
+<td> Minimum grade </td>
+<td> A+ </td>
+<td> A </td>
+<td> A- </td>
+<td> B+ </td>
+<td> B </td>
+<td> B- </td>
+<td> C+ </td>
+<td> C </td>
+<td> C- </td>
+</tr>
+</table>
+Additionally, any score in at least the 85th percentile or higher is guaranteed an A grade, while any score in the 65th percentile or higher is guaranteed a B grade.
+</p>
+
+<p>
+For future reference, the final conversion was made as follows:
+<table border="1">
+<tr>
+<td> Percentage </td>
+<td> 97 </td>
+<td> 93 </td>
+<td> 90 </td>
+<td> 87 </td>
+<td> 83 </td>
+<td> 78 </td>
+<td> 75 </td>
+<td> 69 </td>
+<td> 63 </td>
+</tr>
+<tr>
+<td> Letter grade </td>
+<td> A+ </td>
+<td> A </td>
+<td> A- </td>
+<td> B+ </td>
+<td> B </td>
+<td> B- </td>
+<td> C+ </td>
+<td> C </td>
+<td> C- </td>
+</tr>
+</table>
+
+</p>
+
+<p>
+<b>Academic Integrity:</b>
+   <ul>
+    <li>You are welcome (and strongly encouraged) to work with other students in the class. However, you must clearly indicate who you worked with on each problem. In addition, you must write your solutions in your own words; do not copy/paste from others, as CoCalc's TimeTravel feature makes this trivial to detect.
+    </li>
+    <li>
+    You are welcome (and expected) to do research online using the CoCalc documentation, Google, Wikipedia, Stack Overflow, etc; but be sure to provide links to sources you use in your solutions.
+Be as specific as possible; e.g., provide URLs to individual web pages rather than to whole web sites.
+    </li>
+    <li>Misuse of CoCalc will be considered a violation of academic integrity. This includes
+unauthorized access to other user accounts, and online behavior that violates UCSD's <a href="http://www.ucsd.edu/catalog/front/shpp.html">discrimination and harassment policies</a>.
+    </li>
+    <li>
+    Violations of academic integrity may be handled by zeroing out scores on individual assigments; 
+assigning failing course grades; and/or <a href="https://students.ucsd.edu/sponsor/student-conduct/regulations/22.00.html">campus disciplinary measures</a>.
+    </li>
+    
+   </ul>
+
+</p>
+
+<p><b>Topics calendar:</b></p>
+
+<p>
+Some adjustments may be made as the term progresses.
+</p>
+<ul>
+<li>
+Weeks 1-2: CoCalc, Jupyter notebooks, markdown syntax, Python
+</li>
+<li>
+Week 3: Sage
+</li>
+<li>
+Week 4: Linear algebra (including comparison with MATLAB)
+</li>
+<li>
+Week 5: Discrete math (combinatorics, graph theory)
+</li>
+<li>
+Week 6: Algebra, number theory, cryptography
+</li>
+<li>
+Weeks 7-8: Statistics (including comparison with R), machine learning
+</li>
+<li>
+Week 9: Julia
+</li>
+<li>
+Week 10: Final project
+</li>
+</ul>
+
+</body>
+</html>
