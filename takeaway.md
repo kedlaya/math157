@@ -1,24 +1,3 @@
-Good ideas:
-- For redundancy, always bring two laptops to class. And their charger(s). (Side benefit: this means one can catch up on email or work during that awkward few minutes before class starts!)
-- The text on the projector can *always* be larger. Also, use global account settings to choose a sensible color scheme for the editor (e.g., Monokai).
-- Before pushing any handout or assignment, use the "edit handout" button and:
-  - remove all cell output;
-  - remove any extra files (or better yet, don't create them there in the first place; sometimes CoCalc will undelete them without warning);
-  - make sure the kernel is set correctly (to the first one to be used);
-  - for assignments, check that the due date is correctly set (this creates an extra file in the project).
-- Regarding assignments:
-  - Write the problem sets first, then construct lectures around them.
-  - Since the later problem sets are naturally harder, maybe for balance they should also be shorter.
-  - Students appreciate having the next homework available as soon as the previous one is collected.
-  - If each unit will be running MWF, have the corresponding problem set due the following Monday or Tuesday. And try to schedule sections and office hours with this in mind.
-- Clarify at the outset what communication is and is not allowed by email. In particular, routine questions about upcoming homework should generally be restricted to office hours or virtual office hours. (However, questions about technical issues with the homework are fair game, although don't promise individual answers.)
-- Consider, in addition to pushing out the lectures, pushing out a second copy of each notebook with the annotations made during class.
-- To cut down on lag in the chat room, one should periodically archive the chat room and create a new one. We might also want to try using Piazza instead of, or in addition to, the group chat room.
-
-What to explain to TAs at the first meeting:
-- Demonstrate features of the course project.
-- Indicate the location of the chat room.
-- Create the duty roster ahead of time (with virtual office hours and solution keys) and explain its use at the TA meeting.
 
 Possible changes for next time:
 - At the moment, most students come having seen C and/or Java in one of the basic CSE courses. 
@@ -55,3 +34,11 @@ Possible changes for next time:
   - RISE
   - nbgrader
   - tutormagic
+- Restructure homework assigments:
+  - Given the nature of programming assignments, one per week may be too many. Maybe shift to biweekly assignments due in weeks 2, 4, 6, 8, 10.
+  - In the off weeks, do some sort of in-class assessment, like a "concept quiz".
+- Define the course focus more narrowly.
+  - Rename the course to "Python for Mathematics".
+  - Edit the course syllabus to focus more specifically on mathematical computation.
+  - Specifically exclude data science, statistics, and machine learning, as these are covered in Math 189.
+- Consider using Piazza in addition to, or in conjunction with, the chat room.
